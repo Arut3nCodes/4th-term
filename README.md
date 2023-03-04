@@ -1,7 +1,9 @@
 # 4th-term
-Everything I did during my 4th semester at PWr
+Repository that consist of every single piece of code I've written during 4th semester (So far)
 
-What courses did I take that consisted of coding in any form:
+## What courses did I take that consisted of coding in any form
+
+***Note**: Clicking on dir name will send you to it's location*
 
 | **Course name** | **Nazwa Kursu** | **Directory/Folder** | **Language/Język** |
 |:---:|:---:|:---:|:---:|
@@ -9,5 +11,5 @@ What courses did I take that consisted of coding in any form:
 | Script Languages | Języki Skryptowe | JS | Python |
 | System Analysis and Decision Support | Metody Systemowe i Decyzyjne | MSiO | UML |
   
-The list might change as the 4th term goes on
+***Note**: List might expand or update as the term will go on*
   
