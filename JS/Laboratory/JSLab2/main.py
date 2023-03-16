@@ -1,16 +1,36 @@
-# This is a sample Python script.
+import countAllGigabytes
+import pathAndSizeOfLargestResource
+import ratioOfFilesWithCertainFileFormats
+import reducers
+import filters
+import protocolFilter
+import timeFilter
+import dateFilter
+import addressFilter
+def fileReader():
+    with open('NASA', encoding='utf8') as file:
+        listOfLines = []
+        for line in file:
+            if(line != ''):
+                #print(line)
+                listOfLines.append(line.split())
+        file.close()
+        return listOfLines
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+def readLine(listOfLines):
+    for line in listOfLines:
+        for part in line:
+            print(part, end=" ")
+        print()
 
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
+    listOfLines = fileReader()
+    #protocolReducer.reduceByProtocolAndCountLines(listOfLines, 404)
+    #countAllGigabytes.countAndPrintOutSummaryGigabytes(listOfLines)
+    #pathAndSizeOfLargestResource.printOutPathAndSizeOfLargestResource(listOfLines)
+    #ratioOfFilesWithCertainFileFormats.printOutRatioOfGraphicFilesToAllFiles(listOfLines)
+    #protocolFilter.filterByProtocol(listOfLines, 404)
+    #timeFilter.printResourcesInBetweenHours(listOfLines, 22, 6)
+    # !!!!! dateFilter.printResourcesOnDay(listOfLines, 1)
+    addressFilter.printOutOnlyWithAdress(listOfLines, '.pl')
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
