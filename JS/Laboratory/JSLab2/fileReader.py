@@ -1,2 +1,0 @@
-def readFile(fileName):
-    file
