@@ -7,9 +7,9 @@ Repository that consist of every single piece of code I've written during 4th se
 
 | **Course name** | **Nazwa Kursu** | **Directory/Folder** | **Language/Język** |
 |:---:|:---:|:---:|:---:|
-| Basics of Software Engineering | Podstawy Inżynierii Oprogramowania | PIO | Python |
+| Basics of Software Engineering | Podstawy Inżynierii Oprogramowania | PIO | UML |
 | Script Languages | Języki Skryptowe | [JS](/JS/Laboratory) | Python |
-| System Analysis and Decision Support | Metody Systemowe i Decyzyjne | MSiO | UML |
+| System Analysis and Decision Support | Metody Systemowe i Decyzyjne | MSiO | Python |
   
 ***Note**: List might expand or update as the term will go on*
   
