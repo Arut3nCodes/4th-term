@@ -3,13 +3,12 @@ from sys import argv
 
 def envVarRead():
     if len(argv) == 1:
-        for KEY, VALUE in environ:
+        for KEY, VALUE in environ.items():
             print(f'{KEY}: {VALUE}')
     else:
-        for param in argv:
-            if param in environ:
+        for num in range(1, len(argv)-1):
+            param = argv[num]
+            if str(param) in environ:
                 print(f'{param}: {environ[param]}')
             else:
-                print(f'Parameter {param} d')
-if __name__ == '__main__':
-    envVarRead()
+                print(f"Parameter {param} doesn't exit")
