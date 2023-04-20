@@ -1,11 +1,15 @@
 import re
-import logger
 import datetime
+
 
 def correctDict(dictLine):
     dictLine['date'] = datetime.datetime.strptime(dictLine['date'], "%b %d %H:%M:%S")
+    if dictLine['date'].month == 1:
+        dictLine['date'] = dictLine['date'].replace(year=(dictLine['date'].year+1))
     dictLine
     return dictLine
+
+
 def lineToDict(line):
     dictLine = dict()
     nametags = ['date', 'host', 'PID', 'description']
@@ -20,9 +24,13 @@ def readFile(fileName, flag=False):
     try:
         with open(fileName) as file:
             listOfLines = []
+            i = 1
             for line in file:
                 listOfLines.append(line)
-                if flag: print(line)
+
+                if flag:
+                    print(f'{i}: {line}')
+                    i += 1
             return listOfLines
     except FileNotFoundError:
         print("File doesn't exist")

@@ -5,7 +5,7 @@ def getIpv4sFromLog(line):
     return re.findall(pattern, line['description'])
 
 def getUsersFromLog(line):
-    pattern = r'user ([A-z0-9]+)|user\=([A-z0-9]+)'
+    pattern = r"user ([A-z0-9]+)|user\=([A-z0-9]+)"
     found = re.findall(pattern, line['description'])
     match found:
         case [(x, '')] if x not in ['authentication', 'unknown']:
