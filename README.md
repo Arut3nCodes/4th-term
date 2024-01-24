@@ -7,7 +7,6 @@ Repository that consists of most tasks that I've written during 4th semester (So
 
 | **Course name** | **Nazwa Kursu** | **Directory/Folder** | **Language/Język** |
 |:---:|:---:|:---:|:---:|
-| Basics of Software Engineering | Podstawy Inżynierii Oprogramowania | PIO | UML |
 | Script Languages | Języki Skryptowe | [JS](/JS/Laboratory) | Python |
 | System Analysis and Decision Support | Metody Systemowe i Decyzyjne | MSiO | Python |
   
