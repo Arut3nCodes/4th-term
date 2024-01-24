@@ -1,5 +1,5 @@
 # 4th-term
-Repository that consist of every single piece of code I've written during 4th semester (So far)
+Repository that consists of most tasks that I've written during 4th semester (So far)
 
 ## What courses did I take that consisted of coding in any form
 
